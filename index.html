@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>동방 뮤악단</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-container">
+    <div id="music-list">
+      <h1 style="display: flex; align-items: center; justify-content: space-between;">
+        동방 뮤악단
+        <a href="game/game.html" title="게임 시작">
+          <img src="game-icon.gif" alt="게임" style="width: 32px; height: 32px; margin-left: 10px; cursor: pointer;" />
+        </a>
+      </h1>      
+      <h2>노래 목록</h2>
+      <div id="songs"></div>
+    </div>
+
+    <div id="player-area">
+      <pre id="ascii" style="display:none;">Loading...</pre>
+      <video id="videoPlayer" controls style="display:none;"></video>
+      <button id="startBtn" style="display:none;">시작</button>
+      <button id="stopBtn" style="display:none;">멈춤</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
