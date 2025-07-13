@@ -64,7 +64,7 @@ class Player {
         this.height = 50;
         this.x = canvas.width / 2 - this.width / 2;
         this.y = canvas.height - this.height - 30;
-        this.speed = 6; // **수정됨: 플레이어 이동 속도 증가**
+        this.speed = 3; // **수정됨: 플레이어 이동 속도 증가**
         this.isMovingLeft = false;
         this.isMovingRight = false;
         this.isMovingUp = false;
@@ -414,7 +414,7 @@ class Enemy {
 
         switch(bossPhase) {
             case 1: // 초기 페이즈
-                baseBulletSpeed = 8; 
+                baseBulletSpeed = 4; 
                 numBullets = 3;
                 spreadAngle = Math.PI / 8;
                 bulletColor = 'red';
@@ -430,7 +430,7 @@ class Enemy {
                 break;
 
             case 2: // 두 번째 페이즈
-                baseBulletSpeed = 9; 
+                baseBulletSpeed = 4.5; 
                 numBullets = 15;
                 spreadAngle = Math.PI * 0.9;
                 bulletColor = 'yellow';
@@ -480,7 +480,7 @@ class Enemy {
                     }
 
                 } else {
-                    baseBulletSpeed = 15; 
+                    baseBulletSpeed = 7.5; 
                     numBullets = 25;
                     bulletColor = 'magenta';
                     bulletRadius = 6;
@@ -506,7 +506,7 @@ class Enemy {
                 break;
 
             case 4: // 최종 히든 페이즈: 극도로 느리고 엄청나게 많은 탄막 + 재설계된 레이저 벽 패턴
-                const finalSpeed = 6; 
+                const finalSpeed = 4; 
                 const finalRadius = 8;
                 const finalColor = 'lime'; 
 
